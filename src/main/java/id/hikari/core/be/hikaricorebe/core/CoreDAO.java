@@ -1,4 +1,4 @@
-package id.hikari.core.be.hikaricorebe.dao;
+package id.hikari.core.be.hikaricorebe.core;
 
 import id.hikari.core.be.hikaricorebe.data.model.BaseData;
 import org.springframework.data.jpa.repository.JpaRepository;
