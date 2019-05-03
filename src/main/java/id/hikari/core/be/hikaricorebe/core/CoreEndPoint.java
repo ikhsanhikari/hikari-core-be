@@ -3,6 +3,7 @@ package id.hikari.core.be.hikaricorebe.core;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 public interface CoreEndPoint<MODEL> {
     @GetMapping("/findAll")
@@ -14,7 +15,7 @@ public interface CoreEndPoint<MODEL> {
     MODEL delete(Long id);
 
     @PostMapping("/save")
-    MODEL save(MODEL model);
+    MODEL save(@RequestBody  MODEL model);
 
     MODEL update(MODEL model);
 }
